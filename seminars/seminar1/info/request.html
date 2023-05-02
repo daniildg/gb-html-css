@@ -10,26 +10,29 @@
 </head>
 
 <body>
- <li><a href="../index.html">Главная</a></li>
- <li><a href="about.html">Обо мне</a></li>
- <li><a href="#">Оставить заявку</a></li>
- <h1>Оставить заявку</h1>
+ <ol class="menu">
+  <li class="menu-item"><a class="menu-item-link" href="../index.html">Главная</a></li>
+  <li class="menu-item"><a class="menu-item-link" href="about.html">Обо мне</a></li>
+  <li class="menu-item"><a class="menu-item-link" href="#">Оставить заявку</a></li>
+ </ol>
+ <h1 class="title">Оставить заявку</h1>
  <form action="#">
   <div>
    <label for="name">Введите
     ваше имя</label>
-   <input id="name" type="text" placeholder="Олег"><br>
+   <input class="input input-name" id="name" type="text" placeholder="Олег"><br>
    <label for="mail">Введите
     адрес почты</label>
-   <input id="mail" type="email" placeholder="101@mail.com"><br>
+   <input class="input input-email" id="mail" type="email" placeholder="101@mail.com"><br>
   </div>
-  <label for=""></label>
+  <!-- <label for=""></label>
   <input type="text" placeholder="“Введите
   ваше имя"><br>
   <input type="email" placeholder="“Введите
-  адрес почты"><br>
-  <button type="submit">Отправить</button>
-  <button type="reset">Стереть</button>
+  адрес почты"><br> -->
+  <button class="form-btn" type="submit">Отправить</button>
+  <br>
+  <button class="form-btn" type="reset">Стереть</button>
  </form>
 </body>
 
