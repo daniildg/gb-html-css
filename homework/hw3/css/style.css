@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: #fff;
+}
+
+.homepage-header {
+  padding: 40px 0 84px 0;
+}
+
+.menu-list-item-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+}
+
+.link-home {
+  color: #F25822;
+}
+
+.homepage-content {
+  padding: 0 0 162px 0;
+}
+
+.meta-title {
+  font-size: 60px;
+  line-height: 70px;
+  margin: 0 0 17px 0;
+}
+
+.meta-text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #888888;
+  margin: 0 0 37px 0;
+}
+
+.button-start {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background: #F25822;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.button-watch {
+  width: 140px;
+  height: 50px;
+  border: none;
+  background: none;
+  font-size: 15px;
+  line-height: 18px;
+  color: #AAAAAA;
+}
+
+.main-brand {
+  padding: 97px 0 96px 0;
+}
