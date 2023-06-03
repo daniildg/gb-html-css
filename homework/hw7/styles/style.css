@@ -30,16 +30,12 @@ a {
   flex-wrap: wrap;
 }
 
-.header-wrapper_logo-wrapper {}
-
 .header-wrapper_logo-list {
   display: flex;
   gap: 41px;
   align-items: flex-end;
   list-style: none;
 }
-
-.header-wrapper_buttons-wrapper {}
 
 .header-wrapper_buttons-list {
   display: flex;
@@ -52,11 +48,15 @@ a {
   background-color: #F1E4E6;
 }
 
+.main-center {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .main-wrapper {
   display: flex;
-  max-width: 1600px;
   flex-wrap: wrap;
-  margin: 0 auto 0 auto;
 }
 
 .main-photo-wrp {
@@ -72,13 +72,10 @@ a {
 }
 
 .main-wrapper_meta-wrapper {
-  margin-top: 290px;
-  margin-left: 39px;
-  margin-right: 331px;
   height: 92px;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
-  margin-bottom: 381px;
+  margin: 290px 0 381px 39px;
 }
 
 .main-wrapper_meta-wrapper_title {
@@ -102,16 +99,20 @@ a {
   color: #F16D7F;
 }
 
-.sales-wrapper {
-  margin-top: 65px;
-  margin-bottom: 96px;
+.sales {
+  padding: 65px 0 110px 0;
+}
+
+.grid-center {
+  max-width: 1140px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .sales-wrapper .center-block {
   display: grid;
   grid-template-columns: repeat(3, minmax(30%, 360px));
-  column-gap: 30px;
+  grid-gap: 30px;
 }
 
 .sales-wrapper-list-item:last-child {
@@ -127,7 +128,6 @@ a {
   width: 100%;
   max-width: 360px;
   min-height: 260px;
-  margin: 0 0 30px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -149,7 +149,8 @@ a {
 
 .sales-wrapper-list-item:last-child {
   margin: 0;
-  max-width: 100%;
+  max-width: 1140px;
+  min-height: 180px;
   background-image: url(../img/sales-block-wide.png);
 }
 
@@ -192,6 +193,10 @@ a {
   color: #F16D7F;
 }
 
+.feature-wrapper {
+  padding: 0 0 60px 0;
+}
+
 .feature-wrapper_heading {
   text-align: center;
   font-style: normal;
@@ -202,7 +207,7 @@ a {
 }
 
 .feature-wrapper_txt {
-  margin-top: 6px;
+  margin: 6px 0 48px 0;
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -211,15 +216,10 @@ a {
   color: #9F9F9F;
 }
 
-.feature-wrapper_tiles {
-  margin-top: 48px;
-  width: 100%;
-}
-
 .feature-wrapper_tiles .center-block {
   display: grid;
   grid-template-columns: repeat(3, minmax(30%, 360px));
-  column-gap: 30px;
+  grid-gap: 30px;
 }
 
 .feature-tiles-list {
@@ -231,7 +231,6 @@ a {
   display: block;
   max-width: 360px;
   width: 100%;
-  margin: 0 0 30px 0;
   position: relative;
   background: #F8F8F8;
   text-decoration: none;
@@ -307,6 +306,8 @@ a {
 }
 
 .feature-tiles-list-item_info_txt {
+  max-width: 315px;
+  width: 100%;
   margin: 0 0 18px 0;
   font-weight: 300;
   font-size: 14px;
@@ -350,8 +351,7 @@ a {
 .feature-button-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
-  padding-bottom: 60px;
+  margin: 48px 0 0 0;
 }
 
 .feature-wrapper-btn {
@@ -390,57 +390,73 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    max-width: 704px;
+  }
+
   .header {
     padding: 18px 32px;
   }
+
+  .main-center {
+    max-width: 736px;
+  }
+
   .main-photo-wrp {
     max-width: 386px;
     max-height: 368px;
   }
+
   .main-wrapper_meta-wrapper {
-    margin: 138px 34px 138px 22px;
+    margin: 138px 0 138px 36px;
   }
+
   .main-wrapper_meta-wrapper_title {
     font-size: 44px;
     line-height: 52.8px;
   }
+
   .main-wrapper_meta-wrapper_heading {
     font-size: 24px;
     line-height: 28.8px;
   }
+
   .sales {
-    padding: 0 16px;
+    padding: 65px 0 96px 0;
   }
-  .sales-wrapper {
-    margin: 65px 0 96px 0;
+
+  .grid-center {
     max-width: 736px;
-    width: 100%;
   }
+
   .sales-wrapper .center-block {
     grid-template-columns: repeat(3, minmax(30%, 232.4px));
-    column-gap: 19px;
+    grid-gap: 20px;
   }
+
   .sales-wrapper-list-item {
     max-width: 232.4px;
     width: 100%;
     min-height: 168px;
     background-size: contain;
   }
+
   .sales-wrapper-list-item:last-child {
     max-width: 735px;
     width: 100%;
     min-height: 116px;
   }
+
   .feature-wrapper_txt {
-    margin-top: 3.3px;
+    margin: 3.3px 0 73px 0;
   }
-  .feature-wrapper_tiles {
-    margin: 73px 16px 0;
-    max-width: 736px;
-    box-sizing: border-box;
-  }
+
   .feature-wrapper_tiles .center-block {
-    grid-template-columns: repeat(2, minmax(0%, 360px));
-    column-gap: 16px;
+    grid-template-columns: repeat(2, minmax(auto, 360px));
+    grid-gap: 16px;
+  }
+
+  .feature-button-wrapper {
+    margin: 32.5px 0 0 0;
   }
 }
