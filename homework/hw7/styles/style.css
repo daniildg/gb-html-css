@@ -72,13 +72,6 @@ a {
   background-position: bottom left -225px;
 }
 
-/* .main-wrapper_meta-wrapper {
-  height: 92px;
-  border-left: 12px solid #F16D7F;
-  padding-left: 16px;
-  margin: 290px 0 381px 39px;
-} */
-
 .main-wrapper_meta-wrapper_title {
   display: block;
   width: 100%;
@@ -362,8 +355,6 @@ a {
   margin: 0 11px 0 0;
 }
 
-/* robit!!! */
-
 .feature-button-wrapper {
   display: flex;
   justify-content: center;
@@ -419,10 +410,9 @@ a {
     margin: 0 0 20px 0;
   }
 
-  /* 
   .main-center {
-    max-width: 736px;
-  } */
+    max-width: 740px;
+  }
 
   .main-wrapper {
     background-position: bottom left;
