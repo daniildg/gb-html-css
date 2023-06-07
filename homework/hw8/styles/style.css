@@ -678,12 +678,12 @@ a {
     padding: 64px 0;
   }
 
-  .grid-center {
+  .sales .grid-center {
     max-width: 343px;
   }
 
   .sales-wrapper .center-block {
-    grid-template-columns: repeat(1, minmax(30%, 343px));
+    grid-template-columns: repeat(1, minmax(100%, 343px));
     grid-gap: 32px;
   }
 
@@ -702,7 +702,7 @@ a {
     max-width: 359px;
   }
 
-  .grid-center {
+  .feature .grid-center {
     padding: 0 0 85px 0;
   }
 
@@ -711,8 +711,12 @@ a {
   }
 
   .feature-wrapper_tiles .center-block {
-    grid-template-columns: repeat(1, minmax(30%, 359px));
+    grid-template-columns: repeat(1, minmax(100%, 359px));
     grid-gap: 15.6px;
+  }
+
+  .feature-tiles-list-item {
+    max-width: 359px;
   }
 
   .feature-button-wrapper {
