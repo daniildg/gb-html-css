@@ -28,6 +28,7 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .header-wrapper_logo-list {
@@ -61,10 +62,6 @@ a {
   height: 28px;
 }
 
-/* .item-search-form>.item-search-form_label>img:hover {
-  filter: brightness(1.2);
-} */
-
 .item-search-form_input {
   width: 0px;
   min-height: 20px;
@@ -91,11 +88,6 @@ a {
   align-items: center;
   list-style: none;
 }
-
-/* .header-wrapper_buttons-list-item .item-menu {
-  width: 32px;
-  height: 23px;
-} */
 
 .header-wrapper_buttons-menu {
   display: flex;
@@ -168,8 +160,8 @@ a {
   width: 100%;
   min-height: 200px;
   position: absolute;
-  top: 77px;
-  right: 0;
+  top: 56px;
+  right: -4px;
   z-index: 2;
   padding: 32px 74px 32px 32px;
   box-sizing: border-box;
@@ -232,6 +224,15 @@ a {
   display: none;
 }
 
+.menu-list-item.menu-section.mobile-menu-placeholder>a {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list-item.menu-section.mobile-menu-placeholder>a:nth-child(1)>h2 {
+  margin: 0 16px 0 0;
+}
+
 .header-wrapper_buttons-list-item-link {
   display: block;
   max-width: 29px;
@@ -242,7 +243,6 @@ a {
 
 .header-wrapper_buttons-list-item-link-icon {
   fill: #E8E8E8;
-  /* fill="#E8E8E8" */
 }
 
 .header-wrapper_buttons-list-item-link-icon:hover {
@@ -253,10 +253,29 @@ a {
   fill: #ccc;
 }
 
-.header-wrapper_buttons-list-item:nth-child(3)>a {
-  max-width: 32px;
+.header-wrapper_buttons-list-item:nth-child(3)>.header-wrapper_buttons-list-item-link {
+  position: relative;
 }
 
+.header-wrapper_buttons-list-item:nth-child(3) .header-wrapper_buttons-list-item-link-icon {
+  width: 32px;
+  height: 29px;
+}
+
+.header-wrapper_buttons-list-item:nth-child(3) span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  left: 24px;
+}
 
 .main {
   width: 100%;
@@ -786,6 +805,11 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  transition: 0.2s;
+}
+
+.upfooter-subsription-form-button:active {
+  filter: brightness(0.5);
 }
 
 .footer {
@@ -973,11 +997,14 @@ a {
   }
 
   .mobile-menu-placeholder {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .mobile-menu-placeholder>a:last-child h2 {
     margin: 0;
+    width: 83px;
   }
 
   .main {
